@@ -1,21 +1,69 @@
 import React from 'react';
-import Navbar from "../Navbar";
 import Hero from './Hero_Section';
 import LeftSection from './LeftCompo';
 import RightSection from './RightCompo';
 import Universe from './Zero_Universe';
-import Footer from "../Footer";
+import GPlay from '../../assets/googlePlayBadge.svg'
+import AStore from '../../assets/appstoreBadge.svg'
+import kite from '../../assets/kite.png'
+import coin from '../../assets/coin.png'
+import console from '../../assets/console.png'
+import kiteConnect from '../../assets/kiteconnect.png'
+import varsity from '../../assets/varsity.png'
 
 
 function ProductPage() {
     return ( 
         <>
-        <Navbar/>
         <Hero/>
-        <LeftSection/>
-        <RightSection/>
+          <div className="container p-5 ">
+        <LeftSection 
+        lImg = {kite}
+         head = "Kite"
+         about = "Our ultra-fast flagship trading platform with streaming market data, advanced charts, an elegant UI, and more. Enjoy the Kite experience seamlessly on your Android and iOS devices."
+         link1="https://kite-demo.zerodha.com/dashboard"
+         link2="https://zerodha.com/products/kite"
+          lName1 = "Try demo"
+          lName2 = "Learn more"
+          gPlay  = {GPlay}
+         aStore = {AStore}
+        />
+        <RightSection
+         rImg={console}
+         head="Console"
+         about="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
+         link="https://zerodha.com/products/console"
+         lName="Learn more"
+        />
+      <LeftSection 
+        lImg = {coin}
+         head = "Coin"
+         about = "Buy direct mutual funds online, commission-free, delivered directly to your Demat account. Enjoy the investment experience on your Android and iOS devices."
+         link1="https://coin.zerodha.com/"
+          lName1 = "Coin"
+          gPlay  = {GPlay}
+         aStore = {AStore}
+        />
+        <RightSection
+         rImg={kiteConnect}
+         head="Kite Connect API"
+         about="Build powerful trading platforms and experiences with our super simple HTTP/JSON APIs. If you are a startup, build your investment app and showcase it to our clientbase."
+         link="https://zerodha.com/products/api/"
+         lName="Kite connect"
+        />
+      <LeftSection 
+        lImg = {varsity}
+         head = "Varsity"
+         about = "An easy to grasp, collection of stock market lessons with in-depth coverage and illustrations. Content is broken down into bite-size cards to help you learn on the go."
+         gPlay  = {GPlay}
+         aStore = {AStore}
+        />   
+       </div>
+        <div className="row text-center">
+          <p className='fs-4'>Want to know more about our technology stack? Check out the <a href="https://zerodha.tech/">Zerodha.tech</a> blog. </p>
+        </div>        
+
         <Universe/>
-        <Footer/>
         </>
      );
 }

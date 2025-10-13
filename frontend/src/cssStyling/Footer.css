@@ -1,0 +1,53 @@
+
+.footer .foot-upper-sect{
+    display: flex;
+}
+.footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.social ul{
+    display: flex;
+    align-items: center;
+}
+
+.social ul li img{
+    height: 20%;
+    width: 20%; 
+}
+
+ul{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+.list-style li{
+    margin-top: 1em;
+}
+.list-style li a{
+    color: rgb(79, 77, 77);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.list-style .nav-head{
+    font-weight: 500;
+    font-size: 1.1em
+}
+
+.footer-graveyard-links ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    transform: translateY(-1rem);
+}
+.footer-graveyard-links ul li a{
+    color: grey;
+    font-size: 13px;
+    
+    /* padding: 2rem; */
+}

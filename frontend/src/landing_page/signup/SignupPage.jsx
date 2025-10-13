@@ -1,14 +1,11 @@
 import React from 'react';
-import Navbar from '../Navbar';
 import Hero from './Hero_Section';
-import Footer from '../Footer';
 
 function SignuPage() {
     return (
         <>
-         <Navbar/>
+      <h1>Signup Page</h1>
          <Hero/>
-         <Footer/>
         </>
       );
 }

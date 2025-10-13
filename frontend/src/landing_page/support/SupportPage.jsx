@@ -1,17 +1,14 @@
 import React from 'react';
-import Navbar from '../Navbar';
 import Hero from './Hero_Section';
 import Options from './Options';
-import Footer from '../Footer';
 
 
 function SupportPage() {
     return (
         <>
-          <Navbar/>
+      <h1>Support Page</h1>
           <Hero/>
           <Options/>
-          <Footer/>
         </>
       );
 }
