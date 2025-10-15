@@ -6,7 +6,6 @@ import Options from './Options';
 function SupportPage() {
     return (
         <>
-      <h1>Support Page</h1>
           <Hero/>
           <Options/>
         </>

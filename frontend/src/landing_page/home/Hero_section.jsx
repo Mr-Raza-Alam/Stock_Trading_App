@@ -4,8 +4,8 @@ import '../../cssStyling/HomePage/Hero_section.css';
 function Hero() {
     return ( 
      <>
-      <div className="container p-5 hero-container">
-         <div className="row text-center hero-sect">
+      <div className="p-5 mt-5 hero-container">
+         <div className="row mt-5 text-center hero-section">
            <img src={homeHero} alt="hero_image"/> <hr />
            <h1 className='mt-5'> Invest in everything   </h1> <br />
            <p className='fs-2'>Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</p> <br /><br />

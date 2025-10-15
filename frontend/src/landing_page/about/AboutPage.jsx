@@ -5,7 +5,6 @@ import People from './People';
 function About() {
     return ( 
       <>
-      <h1>About Page</h1>
       <Hero/>
       <People/>
       </>

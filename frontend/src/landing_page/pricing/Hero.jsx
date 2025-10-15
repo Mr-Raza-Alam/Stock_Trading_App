@@ -4,7 +4,7 @@ import Price2O from '../../assets/intradayTrades.svg';
 function Hero() {
     return (  
         <>
-          <div className="container p-5 mt-5">
+          <div className="p-5 mt-5">
             
             <div className="row text-center p-5">
                 <h1>Charges</h1>

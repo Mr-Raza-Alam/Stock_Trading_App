@@ -4,9 +4,9 @@ function Hero() {
     return (
         <>
             <div className="container p-5 mt-5">
-                <div className="row text-center text-muted" style={{ fontSize: "8px" }}>
-                    <h1>We pioneered the discount broking model in India.</h1>
-                    <h1>Now, we are breaking ground with our technology.</h1>
+                <div className="row mt-3 text-center text-muted">
+                    <h1 className='fs-3'>We pioneered the discount broking model in India.</h1>
+                    <h1 className='fs-3'>Now, we are breaking ground with our technology.</h1>
                     <div style={{ height: "7rem" }}></div>
                 </div> <hr />
 
