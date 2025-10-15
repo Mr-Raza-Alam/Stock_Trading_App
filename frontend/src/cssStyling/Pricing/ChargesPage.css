@@ -1,0 +1,235 @@
+/* ChargesPage.css */
+.charges-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.charges-section {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.charges-table-wrapper {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e6e6e6;
+}
+
+.charges-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.charges-table thead {
+    background-color: #f8f9fa;
+}
+
+.charges-table th {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-weight: 500;
+    color: #555555;
+    border-bottom: 2px solid #e6e6e6;
+    font-size: 15px;
+}
+
+.charges-table tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+
+.charges-table tbody tr:hover {
+    background-color: #fafafa;
+}
+
+.charges-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.charges-table td {
+    padding: 1.2rem 1.5rem;
+    color: #333333;
+    vertical-align: middle;
+    border-right: 1px solid #f0f0f0;
+}
+
+.charges-table td:last-child {
+    border-right: none;
+    text-align: right;
+}
+
+.charges-table td:first-child {
+    font-weight: 400;
+    color: #444444;
+}
+
+.free-badge {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: #ffffff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(40, 167, 69, 0.2);
+}
+
+.charge-amount {
+    color: #333333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .charges-page-container {
+        padding: 1rem 0.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .charges-table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .charges-table {
+        min-width: 500px;
+    }
+    
+    .charges-table th,
+    .charges-table td {
+        padding: 0.8rem 1rem;
+        font-size: 13px;
+    }
+    
+    .charges-table td:last-child {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .charges-page-container {
+        padding: 0.5rem 0.25rem;
+    }
+    
+    .section-title {
+        font-size: 1.25rem;
+        padding: 0 0.5rem;
+    }
+    
+    .charges-table th,
+    .charges-table td {
+        padding: 0.6rem 0.5rem;
+        font-size: 12px;
+    }
+    
+    .free-badge {
+        padding: 0.3rem 0.6rem;
+        font-size: 10px;
+    }
+    
+    .charge-amount {
+        font-size: 12px;
+    }
+}
+
+/* Alternative mobile card layout */
+@media (max-width: 600px) {
+    .mobile-cards .charges-table,
+    .mobile-cards .charges-table thead,
+    .mobile-cards .charges-table tbody,
+    .mobile-cards .charges-table th,
+    .mobile-cards .charges-table td,
+    .mobile-cards .charges-table tr {
+        display: block;
+    }
+    
+    .mobile-cards .charges-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .mobile-cards .charges-table tr {
+        border: 1px solid #e6e6e6;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        background: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    
+    .mobile-cards .charges-table td {
+        border: none;
+        position: relative;
+        padding-left: 40% !important;
+        text-align: left !important;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .mobile-cards .charges-table td:first-child {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 0.5rem;
+        padding-left: 0 !important;
+    }
+    
+    .mobile-cards .charges-table td:not(:first-child):before {
+        content: "Charges: ";
+        position: absolute;
+        left: 0;
+        width: 35%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: 600;
+        color: #666;
+    }
+}
+
+/* Loading state */
+.charges-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: #666;
+}
+
+.charges-loading::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+

@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <>
             <nav className="navbar navbar-expand-lg border-bottom">
-                <div className="container">
+                <div className="container nav-container">
                         <div className="relative-section five columns">
                             <Link to="/">
                                 <img src={Logo} alt="logo" style={{ width: "25%" }} />

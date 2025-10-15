@@ -1,15 +1,23 @@
 
 .navbar{
+    margin: 0;
     width: 100%!important;
-    height: 12%!important;
+    height: 15%!important;
     position: fixed;
      z-index: 1;
      background-color: #fff;
+    transform: translateY(-5rem);
+    border: 2px solid;
+
 }
 
-.navbar .container{
+.navbar .nav-container{
+    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+     background-color: #fff;
+
 }
 
 .nav-item{
