@@ -4,12 +4,12 @@ import SmallcaseLogo from '../../assets/smallcaseLogo.png'
 import SensibullLogo from '../../assets/sensibullLogo.svg'
 import DittoLogo from '../../assets/dittoLogo.png'
 import ZeroFund from '../../assets/zerodhaFundhouse.png'
-import Tijori from '../../assets/Tijori.jpg'
+import Tijori from '../../assets/tijori.svg'
 
 function Universe() {
   return (
     <>
-      <div className="container p-5" style={{transform:"translateY(10rem)"}}>
+      <div className="container p-5" style={{transform:"translateY(0rem)"}}>
 
         <div className="row text-center p-5 ">
           <h1 >The Zerodha Universe</h1>
@@ -31,14 +31,14 @@ function Universe() {
             </div>
 
             <div className="col-4">
-              <img src={Tijori} alt="tijori" style={{ width:"80%",transform:"translate(2rem,-6rem)" }} />
-              <p className='text-muted' style={{transform:"translate(3rem,-11rem)"}}>Investment research platform
+              <img src={Tijori} alt="tijori" style={{ width:"80%",transform:"translate(2rem,-1rem)" }} />
+              <p className='text-muted' style={{transform:"translate(3rem,-.6rem)"}}>Investment research platform
                 that offers detailed insights on stocks,
                 sectors, supply chains, and more.</p>
             </div>
            </div>
           {/* lower box */}
-            <div className="row" style={{transform : "translate(0,-11rem)"}}>
+            <div className="row" style={{transform : "translate(1rem,-3rem)"}}>
 
               <div className="col-4">
                 <img src={StreakLogo} alt="streak" style={{ width: "70%" }} />
@@ -58,7 +58,7 @@ function Universe() {
                   Sign up for free</p>
               </div>
             </div>
-            <button className='btn btn-primary' style={{width:"20%",fontSize:"1.5rem",transform:"translate(27rem,-8rem)"}}>Sign up for free</button>
+            <button className='btn btn-primary' style={{width:"20%",fontSize:"1.5rem",transform:"translate(27rem,0rem)"}}>Sign up for free</button>
         </div>
       </div>
 

@@ -1,0 +1,231 @@
+/* AccountTypes.css */
+
+.account-types-section {
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.account-types-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 3rem;
+    letter-spacing: -0.5px;
+}
+
+.account-types-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.account-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.account-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #387ed1 0%, #2b6ab3 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.account-card:hover {
+    border-color: #387ed1;
+    box-shadow: 0 8px 24px rgba(56, 126, 209, 0.12);
+    transform: translateY(-4px);
+}
+
+.account-card:hover::before {
+    transform: scaleX(1);
+}
+
+.account-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+/* Font Awesome icon styling */
+.account-icon i {
+    font-size: 24px;
+    color: #387ed1;
+    transition: color 0.3s ease;
+}
+
+.account-card:hover .account-icon {
+    background: linear-gradient(135deg, #387ed1 0%, #2b6ab3 100%);
+    transform: scale(1.1);
+}
+
+.account-card:hover .account-icon i {
+    color: #ffffff;
+}
+
+.account-title {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.account-description {
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .account-types-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .section-heading {
+        font-size: 1.75rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .account-types-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .account-types-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .section-heading {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .account-card {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .account-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .account-icon i {
+        font-size: 22px;
+    }
+
+    .account-title {
+        font-size: 1.05rem;
+    }
+
+    .account-description {
+        font-size: 0.9rem;
+    }
+
+    .faq-heading {
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .account-types-section {
+        padding: 2rem 1rem;
+    }
+
+    .section-heading {
+        font-size: 1.35rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .account-card {
+        padding: 1.25rem 1rem;
+    }
+
+    .account-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .account-icon i {
+        font-size: 20px;
+    }
+
+    .account-title {
+        font-size: 1rem;
+    }
+
+    .account-description {
+        font-size: 0.875rem;
+    }
+
+    .faq-section {
+        padding-top: 2rem;
+    }
+
+    .faq-heading {
+        font-size: 1.25rem;
+    }
+}
+
+/* Animation for cards on load */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.account-card {
+    animation: fadeInUp 0.5s ease-out;
+    animation-fill-mode: both;
+}
+
+.account-card:nth-child(1) { animation-delay: 0.1s; }
+.account-card:nth-child(2) { animation-delay: 0.2s; }
+.account-card:nth-child(3) { animation-delay: 0.3s; }
+.account-card:nth-child(4) { animation-delay: 0.4s; }
+.account-card:nth-child(5) { animation-delay: 0.5s; }
+
+/* Accessibility */
+.account-card:focus {
+    outline: 2px solid #387ed1;
+    outline-offset: 2px;
+}
+
