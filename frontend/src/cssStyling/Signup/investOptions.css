@@ -1,0 +1,228 @@
+/* InvestmentOptions.css */
+
+.investment-options-section {
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.investment-options-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.investment-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 3rem;
+    letter-spacing: -0.5px;
+}
+
+.investment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 3rem;
+    margin-bottom: 3rem;
+}
+
+.investment-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.investment-icon {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    position: relative;
+}
+
+.investment-icon i {
+    font-size: 40px;
+    color: #387ed1;
+}
+
+/* Abstract icon decorations */
+.investment-card:nth-child(1) .investment-icon::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ff6b6b;
+    border-radius: 50%;
+    top: -5px;
+    left: -5px;
+    opacity: 0.8;
+}
+
+.investment-card:nth-child(1) .investment-icon::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #ff6b6b;
+    border-radius: 50%;
+    top: 15px;
+    left: -10px;
+    opacity: 0.6;
+}
+
+.investment-card:nth-child(2) .investment-icon::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    background: #387ed1;
+    border-radius: 2px;
+    top: -8px;
+    right: -8px;
+}
+
+.investment-card:nth-child(3) .investment-icon::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: #387ed1;
+    border-radius: 2px;
+    bottom: -5px;
+    left: -8px;
+}
+
+.investment-card:nth-child(4) .investment-icon::before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 12px;
+    background: #ff6b6b;
+    border-radius: 2px;
+    top: -5px;
+    right: -8px;
+}
+
+.investment-card:nth-child(4) .investment-icon::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 8px;
+    background: #387ed1;
+    border-radius: 2px;
+    bottom: 0;
+    right: -12px;
+}
+
+.investment-content {
+    flex: 1;
+}
+
+.investment-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+.investment-description {
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.explore-button-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.explore-investments-btn {
+    background: #387ed1;
+    color: #ffffff;
+    border: none;
+    padding: 0.9rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.explore-investments-btn:hover {
+    background: #2b6ab3;
+    box-shadow: 0 4px 12px rgba(56, 126, 209, 0.3);
+    transform: translateY(-2px);
+}
+
+.explore-investments-btn:active {
+    background: #234f8a;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .investment-options-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .investment-heading {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .investment-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .investment-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .investment-icon i {
+        font-size: 32px;
+    }
+
+    .investment-title {
+        font-size: 1.1rem;
+    }
+
+    .investment-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .investment-options-section {
+        padding: 2rem 1rem;
+    }
+
+    .investment-heading {
+        font-size: 1.35rem;
+    }
+
+    .investment-card {
+        gap: 1rem;
+    }
+
+    .investment-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .investment-icon i {
+        font-size: 28px;
+    }
+
+    .explore-investments-btn {
+        width: 100%;
+        padding: 0.85rem 2rem;
+    }
+}
+
